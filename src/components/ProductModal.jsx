@@ -34,12 +34,12 @@ export default function ProductModal({ product, onClose, onAddToCart, onToggleWi
     };
 
     const catLabels = {
-        evening: '🌙 Mbrëmje',
-        summer: '☀️ Verë',
-        formal: '🎩 Formale',
-        casual: '🧥 Casual',
-        accessories: '💎 Aksesorë',
-        shoes: '👠 Këpucë'
+        evening: '✦ Mbrëmje',
+        summer: '✦ Verë',
+        formal: '✦ Formale',
+        casual: '✦ Casual',
+        accessories: '✦ Aksesorë',
+        shoes: '✦ Këpucë'
     };
 
     return (
