@@ -108,7 +108,7 @@ class LundraAgent {
         if (!isGreeting) return null;
         if (msg.length > 50) return null;
 
-        const text = `${greetingBase} dhe mirë se erdhët në Luciano. 🌹\n\nJam **Lundra**, asistenti juaj për stil dhe koleksione. Si mund t’ju ndihmoj sot?`;
+        const text = `${greetingBase} dhe mirë se erdhët në Luciano. ✦\n\nJam **Lundra**, asistenti juaj për stil dhe koleksione. Si mund t’ju ndihmoj sot?`;
 
         return reply(text, {
             suggestions: ['Shiko koleksionet', 'Fustan mbrëmjeje', 'Bestsellers', 'Rreth Luciano'],
@@ -120,7 +120,7 @@ class LundraAgent {
         if (!has(msg, ['kush je', 'cfare je', 'cfare eshte', 'je robot', 'je ai', 'je bot', 'nje bot', 'chatbot', 'artificial', 'ti je', 'ti jeni', 'eshte robot', 'a je'])) return null;
 
         return reply(
-            `Jam **Lundra** — agjenti i inteligjencës artificiale i **Shtëpisë së Modës Luciano**.\n\n✦ **Nuk jam chatbot i zakonshëm.** Jam projektuar si këshilltar personal i modës luksoze:\n\n• 🧠 Kuptoj pyetjet në gjuhë natyrale\n• 👗 Rekomandoj veshje sipas rastit, buxhetit dhe stilit\n• 📦 Informoj për porosi, dërgime dhe garanci\n• 💬 Përgjigjem çdo pyetjeje me përpikmëri profesionale\n• 🎨 Udhëzoj nga koleksioni deri tek blerja finale\n\nÇfarë mund t'ju ndihmoj sot?`,
+            `Jam **Lundra** — agjenti i inteligjencës artificiale i **Shtëpisë së Modës Luciano**.\n\n✦ **Nuk jam chatbot i zakonshëm.** Jam projektuar si këshilltar personal i modës luksoze:\n\n• Analizë: Kuptoj pyetjet në gjuhë natyrale\n• Stilimi: Rekomandoj veshje sipas rastit, buxhetit dhe stilit\n• Shërbimi: Informoj për porosi, dërgime dhe garanci\n• Komunikimi: Përgjigjem çdo pyetjeje me përpikmëri profesionale\n• Përpunimi: Udhëzoj nga koleksioni deri tek blerja finale\n\nÇfarë mund t'ju ndihmoj sot?`,
             { suggestions: ['Gjeni stilin tim', 'Koleksionet e reja', 'Çmimet'] }
         );
     }
@@ -130,7 +130,7 @@ class LundraAgent {
         // Example: "Si je?"
         if (has(msg, ['si jeni', 'si je', 'how are you', 'si po kalon'])) {
             return reply(
-                `Faleminderit që pyetët. Jam këtu për t’ju ndihmuar të gjeni stilin perfekt nga koleksionet Luciano. 😊\n\nA po kërkoni diçka për një event të veçantë?`,
+                `Faleminderit që pyetët. Jam këtu për t’ju ndihmuar të gjeni stilin perfekt nga koleksionet Luciano. ✦\n\nA po kërkoni diçka për një event të veçantë?`,
                 { suggestions: ['Po, një dasmë', 'Një mbrëmje gala', 'Për punë'] }
             );
         }
@@ -138,7 +138,7 @@ class LundraAgent {
         // "çfarë po bën / çfarë bën"
         if (has(msg, ['ca po ben', 'cfare po ben', 'cfare ben', 'what are you doing', 'po besh'])) {
             return reply(
-                `Jam duke analizuar koleksionet tona të fundit për t'ju ofruar sugjerimet më të rafinuara. ✨\n\nA mund t'ju ndihmoj me diçka specifike?`,
+                `Jam duke analizuar koleksionet tona të fundit për t'ju ofruar sugjerimet më të rafinuara. ✦\n\nA mund t'ju ndihmoj me diçka specifike?`,
                 { suggestions: ['Bestsellers', 'Koleksionet', 'Made to Measure'] }
             );
         }
@@ -151,7 +151,7 @@ class LundraAgent {
         if (!has(msg, ['mirupafshim', 'mireupafshim', 'lamtumire', 'bye', 'goodbye', 'ciao ciao', 'te lumte', 'faleminderit te lumte', 'po shkoj'])) return null;
 
         return reply(
-            `Faleminderit që zgjodhët **Luciano**! 🌹\n\nIshte kënaqësi e vërtetë t'ju shërbej. Nëse keni nevojë për ndihmë tjetër apo dëshironi të eksploroni koleksionet tona, jam gjithmonë këtu.\n\nMirupafshim dhe ditë të mbarë!`,
+            `Faleminderit që zgjodhët **Luciano**! ✦\n\nIshte kënaqësi e vërtetë t'ju shërbej. Nëse keni nevojë për ndihmë tjetër apo dëshironi të eksploroni koleksionet tona, jam gjithmonë këtu.\n\nMirupafshim dhe ditë të mbarë!`,
             { suggestions: ['Kthehu', 'Shiko koleksionet'] }
         );
     }
@@ -161,7 +161,7 @@ class LundraAgent {
         if (!has(msg, ['orar', 'hapet', 'mbyllet', 'kur jeni hapur', 'a jeni hapur', 'oraret', 'opening hours', 'ore hapjes', 'kur punoni'])) return null;
 
         return reply(
-            `**Oraret e Butiqeve Luciano:**\n\n🕙 **E Hënë – E Shtunë:** 10:00 – 20:00\n🕛 **E Diel:** 12:00 – 18:00\n\n📍 Butiqet ndodhen në:\n• 🇮🇹 Firence — Via Tornabuoni 12\n• 🇮🇹 Milano — Via Montenapoleone 8\n• 🇫🇷 Paris — Avenue Montaigne 22\n• 🇬🇧 Londër — New Bond Street 45\n• 🇺🇸 Nju Jork — Fifth Avenue 660\n\nPër rezervime private, kontaktoni: **reservations@luciano-fashion.com**`,
+            `**Oraret e Butiqeve Luciano:**\n\n**E Hënë – E Shtunë:** 10:00 – 20:00\n**E Diel:** 12:00 – 18:00\n\n✦ Butiqet ndodhen në:\n• Itali (Firence) — Via Tornabuoni 12\n• Itali (Milano) — Via Montenapoleone 8\n• Francë (Paris) — Avenue Montaigne 22\n• MB (Londër) — New Bond Street 45\n• SHBA (Nju Jork) — Fifth Avenue 660\n\nPër rezervime private, kontaktoni: **reservations@luciano-fashion.com**`,
             { suggestions: ['Rezervo takim', 'Kontakto butikun', 'Shiko koleksionet'] }
         );
     }
@@ -171,7 +171,7 @@ class LundraAgent {
         if (!has(msg, ['ku jeni', 'ku ndodheni', 'adrese', 'adresë', 'butik', 'dyqan', 'store', 'location', 'ku eshte', 'ku te gjej', 'ku mund te vij'])) return null;
 
         return reply(
-            `**Butiqet Luciano në Botë:**\n\n🇮🇹 **Firence** *(Atelier Qendror)* — Via Tornabuoni 12\n🇮🇹 **Milano** — Via Montenapoleone 8\n🇫🇷 **Paris** — Avenue Montaigne 22\n🇬🇧 **Londër** — New Bond Street 45\n🇺🇸 **Nju Jork** — Fifth Avenue 660\n\n📞 Tel: +39 055 123 4567\n📧 Email: info@luciano-fashion.com\n\nDëshironi të rezervoni një vizitë private?`,
+            `**Butiqet Luciano në Botë:**\n\nFirence *(Atelier Qendror)* — Via Tornabuoni 12\nMilano — Via Montenapoleone 8\nParis — Avenue Montaigne 22\nLondër — New Bond Street 45\nNju Jork — Fifth Avenue 660\n\n📞 Tel: +39 055 123 4567\n📧 Email: info@luciano-fashion.com\n\nDëshironi të rezervoni një vizitë private?`,
             { suggestions: ['Rezervo vizitë private', 'Oraret', 'Kontaktoni'] }
         );
     }
@@ -182,17 +182,17 @@ class LundraAgent {
             {
                 keys: ['dasme', 'dasm', 'nuse', 'wedding', 'martese', 'nuseri', 'bridal'],
                 category: 'evening',
-                reply: `Urime për ngjarjen e veçantë! 💍\n\nPër **dasmën** tuaj, Luciano ofron koleksionin ekskluziv **\"Bridal Elegance\"** — kreacione nusërie të punuara me dorë me mëndafsh italian dhe detaje Swarovski.\n\n**Rekomandimi i Lundrës:** Shërbimi \"Made to Measure\" krijon veshjen e ëndrrave sipas masave tuaja eksakte (4–6 javë prodhim).`,
+                reply: `Urime për ngjarjen e veçantë! ✦\n\nPër **dasmën** tuaj, Luciano ofron koleksionin ekskluziv **\"Bridal Elegance\"** — kreacione nusërie të punuara me dorë me mëndafsh italian dhe detaje Swarovski.\n\n**Rekomandimi i Lundrës:** Shërbimi \"Made to Measure\" krijon veshjen e ëndrrave sipas masave tuaja eksakte (4–6 javë prodhim).`,
             },
             {
                 keys: ['gale', 'gala', 'ceremoni', 'event formal', 'event i rendesishem', 'festë zyrtare', 'natter'],
                 category: 'evening',
-                reply: `Për një **event gala**, koleksioni **\"Notte Eterna\"** është zgjedhja perfekte! ✨\n\nKreacionet tona gala kombinojnë mëndafsh, organza dhe kristale Swarovski — ju garantohet të jeni ylli i mbrëmjes.`,
+                reply: `Për një **event gala**, koleksioni **\"Notte Eterna\"** është zgjedhja perfekte! ✦\n\nKreacionet tona gala kombinojnë mëndafsh, organza dhe kristale Swarovski — ju garantohet të jeni ylli i mbrëmjes.`,
             },
             {
                 keys: ['mbremje', 'mbrëmje', 'darke', 'dark', 'diner', 'dinner', 'restorant', 'romantike'],
                 category: 'evening',
-                reply: `Për një **darkë elegante**, koleksioni mbrëmjeje i Luciano ofron zgjedhje të shkëlqyera! 🌙\n\nFustane koktejli dhe gala me detaje të punuara artizanalisht — ideale për çdo mbrëmje speciale.`,
+                reply: `Për një **darkë elegante**, koleksioni mbrëmjeje i Luciano ofron zgjedhje të shkëlqyera! ✦\n\nFustane koktejli dhe gala me detaje të punuara artizanalisht — ideale për çdo mbrëmje speciale.`,
             },
             {
                 keys: ['biznes', 'pune', 'meeting', 'takim', 'prezantim', 'konference', 'zyre', 'office'],
@@ -202,7 +202,7 @@ class LundraAgent {
             {
                 keys: ['pushime', 'plazh', 'udhetim', 'vakance', 'resort', 'amalfi', 'riviera', 'verore'],
                 category: 'summer',
-                reply: `Për **pushimet luksoze**, koleksioni **\"Primavera/Estate 2026\"** është frymëzimi i pastër mesdhetar! ☀️\n\nMëndafsh i lehtë, ngjyra koral dhe ar, stili i Rivierës — çdo veshje është liri me klasë.`,
+                reply: `Për **pushimet luksoze**, koleksioni **\"Primavera/Estate 2026\"** është frymëzimi i pastër mesdhetar! ✦\n\nMëndafsh i lehtë, ngjyra koral dhe ar, stili i Rivierës — çdo veshje është liri me klasë.`,
             },
         ];
 
@@ -235,7 +235,7 @@ class LundraAgent {
             text = `Koleksioni ynë **Ultra-Luksoz** — kreacione ekskluzive me materiale të rralla dhe artizanat të pakrahasueshëm:`;
         } else {
             prods = PRODUCTS.sort((a, b) => a.price - b.price);
-            text = `Gama jonë e çmimeve fillon nga **320€** deri në **4.500€**.\n\n• 🥇 **Ultra-Luksoz** (2.000–4.500€): Smoking, fustane gala\n• 🥈 **Premium** (800–2.000€): Çanta, taka, koktejli\n• 🥉 **Aksesibël** (320–800€): Shall, bluzë, triko\n\nNë cilën kategori çmimesh jeni të interesuar?`;
+            text = `Gama jonë e çmimeve fillon nga **320€** deri në **4.500€**.\n\n• Klasa **Ultra-Luksoz** (2.000–4.500€): Smoking, fustane gala\n• Klasa **Premium** (800–2.000€): Çanta, taka, koktejli\n• Klasa **Aksesibël** (320–800€): Shall, bluzë, triko\n\nNë cilën kategori çmimesh jeni të interesuar?`;
         }
 
         this.ctx.lastProducts = prods;
@@ -368,7 +368,7 @@ class LundraAgent {
         if (!has(msg, ['rezervo', 'rezervim', 'takim', 'prove', 'appointment', 'book', 'vizite private', 'takim privat'])) return null;
 
         return reply(
-            `**Rezervimi i Takimit Privat Luciano** ✦\n\nKemi tre mënyra për rezervim:\n\n**1. 📞 Telefon:**\n• Firence: +39 055 123 4567\n• Milano: +39 02 345 6789\n\n**2. 📧 Email:**\n• reservations@luciano-fashion.com\n\n**3. 💬 WhatsApp:**\n• +39 333 123 4567\n\n⏰ *E Hënë–E Shtunë, 10:00–20:00*\n\nGjatë vizitës private do të keni konsultim personal, akses ekskluziv në showroom dhe shampanjë Luciano 🥂`,
+            `**Rezervimi i Takimit Privat Luciano** ✦\n\nKemi tre mënyra për rezervim:\n\n**1. Kontakt Telefonik:**\n• Firence: +39 055 123 4567\n• Milano: +39 02 345 6789\n\n**2. Email Zyrtar:**\n• reservations@luciano-fashion.com\n\n**3. Shërbimi Digjital:**\n• WhatsApp: +39 333 123 4567\n\nOraret: E Hënë–E Shtunë, 10:00–20:00\n\nGjatë vizitës private do të keni konsultim personal, akses ekskluziv në showroom dhe mikpritje Luciano ✦`,
             { suggestions: ['Oraret', 'Butiqet', 'Koleksionet'] }
         );
     }
@@ -378,7 +378,7 @@ class LundraAgent {
         if (!has(msg, ['faleminderit', 'shkelqyeshme', 'fantastike', 'perfect', 'e mrekullueshme', 'bravo', 'excellent', 'bukur', 'thank you', 'thanks', 'shume mire', 'mirepo', 'cmoj'])) return null;
 
         const responses = [
-            `Faleminderit sinqerisht! 🌹 Është kënaqësia ime t'ju shoqëroj në udhëtimin tuaj të stilit. A ka diçka tjetër me të cilën mund t'ju ndihmoj?`,
+            `Faleminderit sinqerisht! ✦ Është kënaqësia ime t'ju shoqëroj në udhëtimin tuaj të stilit. A ka diçka tjetër me të cilën mund t'ju ndihmoj?`,
             `Shumë mirë prej jush! Jam e lumtur që qe e dobishme. Si mund t'ju shërbej tjetër?`,
             `Faleminderit! Shtëpia Luciano vlerëson çdo klient. Si mund t'ju ndihmoj tjetër?`,
         ];
@@ -391,7 +391,7 @@ class LundraAgent {
         if (!has(msg, ['nuk funksionon', 'problem', 'gabim', 'ankese', 'pakënaqur', 'keq', 'nuk pelqen', 'eshte keq', 'nuk eshte mire'])) return null;
 
         return reply(
-            `Më vjen shumë keq! 🙏 Ndjehem e obliguar t'ju ndihmoj ta zgjidhim menjëherë.\n\nJu lutem më tregoni konkretisht çfarë nuk funksionoi dhe do të gjejmë zgjidhjen bashkë.\n\nMundësisht, ekipi ynë i mbështetjes:\n📧 support@luciano-fashion.com\n📞 +39 055 123 4567\n\nNë Luciano, çdo klient meriton trajtim të shkëlqyer.`,
+            `Më vjen shumë keq! 🙏 Ndjehem e obliguar t'ju ndihmoj ta zgjidhim menjëherë.\n\nJu lutem më tregoni konkretisht çfarë nuk punoi dhe do të gjejmë zgjidhjen bashkë.\n\nMundësisht, ekipi ynë i mbështetjes:\nEmail: support@luciano-fashion.com\nTel: +39 055 123 4567\n\nNë Luciano, çdo klient meriton trajtim të shkëlqyer.`,
             { suggestions: ['Politika kthimit', 'Kontaktoni ekipin'] }
         );
     }
@@ -440,7 +440,7 @@ class LundraAgent {
         this.ctx.lastProducts = newProds;
 
         return reply(
-            `Më falni, por nuk e kuptova këtë kërkesë. Mund të jeni pak më e qartë? 🧐\n\nSi asistentja juaj, mund t'ju ndihmoj me informacion për **koleksionet**, **fustanet gala**, **çmimet**, ose të kërkoj diçka specifike për ju.`,
+            `Më falni, por nuk e kuptova këtë kërkesë. Mund të jeni pak më e qartë?\n\nSi asistentja juaj, mund t'ju ndihmoj me informacion për **koleksionet**, **fustanet gala**, **çmimet**, ose të kërkoj diçka specifike për ju.`,
             {
                 products: newProds.slice(0, 3),
                 suggestions: ['Shiko koleksionet', 'Bestsellers', 'Fustan mbrëmjeje', 'Rreth Luciano'],
